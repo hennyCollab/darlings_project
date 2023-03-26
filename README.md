@@ -1,2 +1,3 @@
 # darlings_project
-My work on the website for the upcoming Darlings project, "Archive".
+
+Repo of website files/folders for the upcoming Darlings digital art project, "Archive".
