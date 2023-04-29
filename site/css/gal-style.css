@@ -1,0 +1,76 @@
+pre, code { 
+    font-family: Hack, monospace; 
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffe7d7;
+    font-family:  'Hack', Arial, Helvetica, sans-serif;
+    list-style: none;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .gal-item {
+    display: flex;
+    flex-direction: column;
+    }
+.gal-item > img {
+    width: 200px;
+    order: -1;
+}  
+/*--------------- Nav ------------------*/
+.logo > img {
+    width: 140px;
+}
+
+
+/*------------- Media Queries ----------*/
+
+
+/* Phone Styles*/
+@media (max-width: 768px) {}
+
+/*---------- Desktop Styles ----------*/
+@media only screen and (min-width: 960px) {
+    /*-- Fallback Layout --*/
+    main {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    article {
+        margin: 0; 
+    }
+
+    @supports (display: grid) {
+        main {
+            max-width: 10000px;
+            margin: 0;
+        }
+
+    }
+    .main-container {
+        display: flex;
+        align-items: space-between;
+    }
+    .slide-container-top, .slide-container-bot {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end ;
+    }
+
+}
