@@ -1,23 +1,11 @@
-function scrollTrigger(selector){
-   let els = document.querySelectorAll(selector)
-   els = Array.from(els)
-   els.forEach(el => {
-     addObserver(el)
-   })
- }
- function addObserver(el){
-     // We are creating a new IntersectionObserver instance
-     let observer = new IntersectionObserver((entries, observer) => { // This takes a callback function that receives two arguments: the elements list and the observer instance.
-       entries.forEach(entry => {
-         // `entry.isIntersecting` will be true if the element is visible
-       if(entry.isIntersecting) {
-         entry.target.classList.add('active')
-         // We are removing the observer from the element after adding the active class
-         observer.unobserve(entry.target)
-       }
-     })
-   })
-   // Adding the observer to the element
-   observer.observe(el)
- }
- // Example usage
+var map = L.map('map', {
+  crs: L.CRS.Simple, // CRS.Simple, which represents a square grid:
+  minZoom: -5,
+  maxZoom: 6
+})
+
+var bounds = [xy(0, 0), xy(16384, 11622)]
+var image = L.imageOverlay('../images/landingpage-resize-large.jpg', bounds)
+image.addTo(map)
+
+map.fitBounds(bounds);

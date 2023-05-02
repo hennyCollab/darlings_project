@@ -1,73 +1,35 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: black;
-    color: rgb(212, 210, 208);
-  }
-
-body, .page-container, nav, .container {
-    width: 150vw;
-    height: 150vh;
-}
- 
-.page-container {
-    position: relative;
-}
-
-.welcome {
-    padding: 30vw 55vw 0vw 45vw;
-    display: flex;
-    position: absolute;
-}
-nav {
-    margin-left:auto;
-    margin-right:auto;
-    width:200vw;
-  }
-
-.container {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-  }
-
-.img-container {
-    width: 50%;
-    height: 50%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    home
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
-    width: 250px;
+width: 150px;
+height: auto;
 }
-/*
-.zoom {
-    transition: transform .3s; 
-  }
-  
-  .zoom:hover {
-    transform: scale(1.25)
-  } /*/
 
+body {
+background-color: rgb(0 0 0);
+}
 
-  /*Bio Page Styles*/
+.background-container {
 
-  .img-conti, img-maiden, img-pm, img-rose {
+}
 
-  }
+.background-img {
+width: 120vw;
+height: auto;
+position: absolute;
+top: -50px;
+left: -40px;
+z-index: -1;
+}
 
-  .img-bio {
-    width:67vw;
-  }
+.img-link-about {
 
-  .img-bio-container {
-    justify-content: center;
-    align-content: center;
-  }
+}
+
+#map { 
+  height: 180px; 
+}
