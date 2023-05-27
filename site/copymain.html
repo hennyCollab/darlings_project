@@ -3,24 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <title>main</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="javas/script.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-zoomify/L.TileLayer.Zoomify.min.css" />
+        <style>
+            #map { height: 400px; }
+        </style>
     </head>
     <body>
-        <div>
-            <nav>
-                <div class="container">
-                    <div class="img-container">
-                        <a href="pages/artists-bio.html"><img src="images/cube.png"></a>
-                    </div>
-                    <div class="img-container">
-                        <a href="pages/gallery.html"><img src="images/hemisphere.png"></a>
-                    </div>
-                    <div class="img-container">
-                    <a href="pages/videos.html"><img src="images/ring.png"></a>
-                    </div>
-                </div>
-            </nav>
-        </div>
+        <div id="map"></div>
+    
+        <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-zoomify/L.TileLayer.Zoomify.min.js"></script>
+    <script src="scripts/leaflet-script.js"></script> <!-- Create a separate JavaScript file for map configuration -->
     </body>
 </html>

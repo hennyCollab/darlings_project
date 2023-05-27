@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>bio</title>
+        <link rel="stylesheet" href="../css/about-style.css">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css"> <!-- custom font -->
+        <!-- Add jQuery library -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- Add maphilight plugin -->
+        <script type="text/javascript" src="jquery.maphilight.min.js"></script> 
+        <script type="text/javascript">$(function() {
+            $('.map').maphilight();
+            });
+        </script>
+        </head>
+    <body>
+        <div id="study-image-container">
+            <div id="study-room-container">
+                <img src="../images/darlings_study_iso.png" usemap="#study-imagemap" alt="the study" id="darlings-study">
+                <map name='study-imagemap'>
+            	    <area id='study-computer' shape='poly' coords='4384.898005379072,3001.405079828481,4463.694805379072,2974.448279828481,4494.798805379072,2978.595479828481,4615.067605379072,2943.3442798284814,4695.938005379072,2949.5650798284814,4708.379605379072,3158.998679828481,4664.834005379073,3183.881879828481,4743.630805379072,3192.176279828481,4751.9252053790715,3295.856279828481,4841.090005379072,3326.960279828481,4658.613205379072,3389.168279828481,4573.595605379072,3360.137879828481,4527.976405379072,3349.769879828481,4378.677205379072,3335.254679828481,4382.824405379072,3223.280279828481,4391.118805379072,3190.102679828481,4436.738005379072,3183.881879828481,4384.898005379072,3173.513879828481' alt='' href="../index.html" data-maphilight='{"fillColor":"000064","fillOpacity":0.6}'/>
+	                <area id='study-door' shape='poly' coords='2418.203011482892,1883.7315212595042,2866.982090529248,1889.2380130269441,2839.4496316920486,2943.7311864916946,2412.6965197154523,2929.9649570730944' alt='' href="../index.html" data-maphilight='{"fillColor":"000064","fillOpacity":0.6}'/>
+                </map>
+                <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+                <script>$('darlings-study').maphilight();</script> -->
+                <script src="../scripts/image-map.js"></script>
+            </div>
+        </div>
+    </body>
